@@ -1,8 +1,8 @@
 # coding: utf-8
 
 RESOURCE_MAPPING = {
-    'resource_name': {
-        'resource': 'resource_url',
-        'docs': 'http://www.documentation.com/link/to/resource/documentation'
+    'profile': {
+        'resource': 'people/~:(id,firstName,lastName,headline,summary,positions,num-connections,num-connections-capped,api-standard-profile-request,picture-url,location,industry)?format=json',
+        'docs': 'https://developer.linkedin.com/docs/fields/basic-profile'
     },
 }
