@@ -17,13 +17,10 @@ class LinkedinClientAdapter(JSONAdapterMixin, TapiocaAdapter):
         params = super(LinkedinClientAdapter, self).get_request_kwargs(
             api_params, *args, **kwargs)
 
-        
         params['auth'] = OAuth2(
             api_params.get('client_id', ''), token={
                 'access_token': api_params.get('access_token'),
                 'token_type': 'Bearer'})
-        
-
         return params
 
     def get_iterator_list(self, response_data):
